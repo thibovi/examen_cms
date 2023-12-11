@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: footballshoes
+name: footballshoes
+propagationMethod: all
+siteSettings:
+  190887d5-cb25-4380-ba2c-ed78da8d1eaa: # Sportshop
+    enabledByDefault: true
+    hasUrls: true
+    template: footballshoes/_entry
+    uriFormat: 'footballshoes/{slug}'
+type: channel

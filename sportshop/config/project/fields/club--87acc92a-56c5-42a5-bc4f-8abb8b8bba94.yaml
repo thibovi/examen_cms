@@ -1,0 +1,19 @@
+columnSuffix: swdvrdrs
+contentColumnType: string(400)
+fieldGroup: 1ce5d3e8-a6a0-4bfc-9299-6220c3da2d51 # Common
+handle: club
+instructions: null
+name: club
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 100
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

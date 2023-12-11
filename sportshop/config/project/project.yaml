@@ -1,0 +1,31 @@
+dateModified: 1702300976
+email:
+  fromEmail: thibovaningelgem@gmail.com
+  fromName: Sportshop
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1ce5d3e8-a6a0-4bfc-9299-6220c3da2d51: Common # Common
+    1d05e0b2-7406-4efe-b25e-7a9daad960d8: Homepage # Homepage
+    3fa82e79-4254-4910-8190-3384c73528f1: Default # Default
+    5ed84738-bcb2-45b1-be29-2de15575a210: Default # Default
+    87acc92a-56c5-42a5-bc4f-8abb8b8bba94: club # club
+    93853fdf-e279-4f85-8fa9-4a918b1de4db: Default # Default
+    190887d5-cb25-4380-ba2c-ed78da8d1eaa: Sportshop # Sportshop
+    1119092d-5b45-47ed-8e74-f3aa41003fa2: Sportshop # Sportshop
+    b48c3297-dd18-4aa6-843d-8be61a0fb7b0: footballshirts # footballshirts
+    da079aa4-9653-4d76-8894-c55498972928: footballshoes # footballshoes
+    e12d34f6-9e04-4618-96c8-0fae0e489b8d: Default # Default
+    e29ccf55-cf3d-4810-bd07-012d4fd14cbd: footballs # footballs
+system:
+  edition: solo
+  live: true
+  name: Sportshop
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
