@@ -1,0 +1,118 @@
+fieldLayouts:
+  6ce49220-3cec-482e-93e5-016f8f36ccb9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: edfe40e4-b412-4e27-80b7-305f61f69db5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 41ed2dbb-e6ad-492d-821b-12cb7a491faf # brand
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b327fdaf-0442-41f3-8a68-b5c024fb0393
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 87acc92a-56c5-42a5-bc4f-8abb8b8bba94 # club
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f2409e61-a98e-49f5-9408-741fde7f02f5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: caa59923-4f51-4ba0-a619-de63b1971cc9 # footballImage
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 838ffc4a-5970-4fac-8c7c-1d25287d1f49
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2cf60187-472f-4ab3-9d0c-3b0442fb83ed # price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c9c57bf-9bac-4793-85b6-3c2cae43872b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 65bf094a-f266-4832-9f5b-1f89e4a1eaa5
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f19ca697-9ddf-460b-b9f2-6240912f9ddb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 804f2510-eae3-4594-bb71-5f165b75186c # category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66c40d88-7970-415b-9ebf-9be37bf4cfd3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bceb8389-049d-462f-ad00-213a8e062a0a
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 5753d5d6-66b6-4c91-b999-a7bb57fe17fa # Products
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

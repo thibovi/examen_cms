@@ -1,0 +1,46 @@
+columnSuffix: lqwcmdvq
+contentColumnType: string(8)
+fieldGroup: 1ce5d3e8-a6a0-4bfc-9299-6220c3da2d51 # Common
+handle: category
+instructions: null
+name: category
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - football
+        -
+          - value
+          - football
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - shirt
+        -
+          - value
+          - shirt
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - shoes
+        -
+          - value
+          - shoes
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

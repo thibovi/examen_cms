@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Headlines</title>
+    {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
+    {% do craft.app.view.registerCssFile('@web/styles/style.css') %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <div class="hamburger"></div>        
+    </nav>
+    {% block content %}{% endblock %}
+ <footer>
+            <h1>sportShop</h1>
+            <div class="elements">
+                <div class="menu">
+                    <h2>Menu</h2>
+                    <a href="#">Home</a>
+                    <a href="{{siteUrl}}products">Products</a>
+                </div>
+
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <a href="mailto:info@sportShop.com">info@sportShop.com</a>
+                </div>
+                <div class="socials">
+                    <h2>Socials</h2>
+                    <div>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="reference">© 2023 by
+                <a href="#" target="_blank">Tipo</a>
+            </p>
+        </footer> 
+</body>
+</html>

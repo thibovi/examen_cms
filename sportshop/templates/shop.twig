@@ -1,0 +1,78 @@
+{% extends "_layout" %}
+{% block content %}
+  <section class="products-section">
+    <h1>Our products</h1>
+    <div class="filters">
+      <a class="filter all active">All</a>
+      <a class="filter footballs">Footballs</a>
+      <a class="filter shirts">Shirts</a>
+      <a class="filter shoes">Shoes</a>
+    </div>
+    <div class="products">
+      {% set entries = craft.entries().section('products').all() %}
+      {% for entry in entries %}
+          <article class="{{ entry.category }}">
+            <picture>
+              <img src="products/{{entry.footballimage.one()}}.jpg" alt="">
+            </picture>
+
+            <h2>{{ entry.title }}</h2>
+
+            <a href="{{ entry.url }}">Bekijk details</a>
+          </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <script>
+    let all = document.querySelector(".all");
+    let footballs = document.querySelector(".footballs");
+    let shirts = document.querySelector(".shirts");
+    let shoes = document.querySelector(".shoes");
+    let articles = document.querySelectorAll(".products article");
+
+    all.addEventListener("click", function (e) {
+      document.querySelector(".active").classList.remove("active");
+      this.classList.add("active");
+      for (let i = 0; i < articles.length; i++) {
+          articles[i].style.display = "block";
+      }
+    });
+
+        footballs.addEventListener("click", function (e) {
+      document.querySelector(".active").classList.remove("active");
+      this.classList.add("active");
+      for (let i = 0; i < articles.length; i++) {
+        if (articles[i].classList.contains("football")) {
+          articles[i].style.display = "block";
+        } else {
+          articles[i].style.display = "none";
+        }
+      }
+    });
+
+    shirts.addEventListener("click", function (e) {
+      document.querySelector(".active").classList.remove("active");
+      this.classList.add("active");
+      for (let i = 0; i < articles.length; i++) {
+        if (articles[i].classList.contains("shirt")) {
+          articles[i].style.display = "block";
+        } else {
+          articles[i].style.display = "none";
+        }
+      }
+    });
+
+    shoes.addEventListener("click", function (e) {
+      document.querySelector(".active").classList.remove("active");
+      this.classList.add("active");
+      for (let i = 0; i < articles.length; i++) {
+        if (articles[i].classList.contains("shoes")) {
+          articles[i].style.display = "block";
+        } else {
+          articles[i].style.display = "none";
+        }
+      }
+    });
+  </script>
+{% endblock %}

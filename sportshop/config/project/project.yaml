@@ -1,22 +1,75 @@
-dateModified: 1702300976
+dateModified: 1702476765
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:e29ccf55-cf3d-4810-bd07-012d4fd14cbd'
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:b48c3297-dd18-4aa6-843d-8be61a0fb7b0'
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:da079aa4-9653-4d76-8894-c55498972928'
+      type: native
+    -
+      key: 'section:1d05e0b2-7406-4efe-b25e-7a9daad960d8'
+      type: native
 email:
   fromEmail: thibovaningelgem@gmail.com
   fromName: Sportshop
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  footballimages:
+    hasUrls: true
+    name: footballImages
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
+  footshirtsImages:
+    hasUrls: true
+    name: footshirts-images
+    settings:
+      path: '@web'
+    type: craft\fs\Local
+    url: '@web'
 meta:
   __names__:
     1ce5d3e8-a6a0-4bfc-9299-6220c3da2d51: Common # Common
-    1d05e0b2-7406-4efe-b25e-7a9daad960d8: Homepage # Homepage
-    3fa82e79-4254-4910-8190-3384c73528f1: Default # Default
-    5ed84738-bcb2-45b1-be29-2de15575a210: Default # Default
+    2cf60187-472f-4ab3-9d0c-3b0442fb83ed: price # price
+    7db4ca7b-b36b-4a80-8dd7-e94f9f73ee77: footballImage # footballImage
+    41ed2dbb-e6ad-492d-821b-12cb7a491faf: brand # brand
     87acc92a-56c5-42a5-bc4f-8abb8b8bba94: club # club
-    93853fdf-e279-4f85-8fa9-4a918b1de4db: Default # Default
+    566e6c4a-96b2-4451-9282-77b881d066f0: football-assets # football-assets
+    804f2510-eae3-4594-bb71-5f165b75186c: category # category
+    3212faf5-0f30-4f06-8052-9bb836896e1f: footshirtImage # footshirtImage
+    5753d5d6-66b6-4c91-b999-a7bb57fe17fa: Products # Products
     190887d5-cb25-4380-ba2c-ed78da8d1eaa: Sportshop # Sportshop
     1119092d-5b45-47ed-8e74-f3aa41003fa2: Sportshop # Sportshop
-    b48c3297-dd18-4aa6-843d-8be61a0fb7b0: footballshirts # footballshirts
-    da079aa4-9653-4d76-8894-c55498972928: footballshoes # footballshoes
-    e12d34f6-9e04-4618-96c8-0fae0e489b8d: Default # Default
-    e29ccf55-cf3d-4810-bd07-012d4fd14cbd: footballs # footballs
+    c48ceaa0-0f94-4c30-8f94-6d2f0cb9106f: footshirtsImage # footshirtsImage
+    caa59923-4f51-4ba0-a619-de63b1971cc9: footballImage # footballImage
+    d97dabfd-e872-47da-b467-c0853bd094a5: Default # Default
 system:
   edition: solo
   live: true

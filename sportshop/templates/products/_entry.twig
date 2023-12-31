@@ -1,0 +1,17 @@
+{% extends "_layout" %}
+{% block content %}
+  <section class="product-details">
+                    <article>
+                        <picture>
+                            <img src="../products/{{entry.footballimage.one()}}.jpg" alt="">
+                        </picture>
+                        <div>
+                          <h2>{{ entry.title }}</h2>
+                          <p>€ {{ entry.price }}</h2>
+                          <p>{{ entry.club }}</h2>
+                          <p>{{ entry.brand }}</h2>
+                          <p>{{ entry.category }}</h2>     
+                        <div>                   
+                    </article>
+  </section>
+{% endblock %}

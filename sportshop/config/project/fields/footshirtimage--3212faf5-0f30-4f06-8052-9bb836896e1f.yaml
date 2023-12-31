@@ -1,0 +1,105 @@
+columnSuffix: csqvnife
+contentColumnType: string
+fieldGroup: 1ce5d3e8-a6a0-4bfc-9299-6220c3da2d51 # Common
+handle: footshirtimage
+instructions: null
+name: footshirtImage
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:5189c62e-c9e1-48eb-9828-1c029ac93568'
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:566e6c4a-96b2-4451-9282-77b881d066f0' # football-assets
+  restrictedLocationSubpath: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Asset
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\assets\AssetCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\assets\FileSizeConditionRule
+              -
+                - uid
+                - 86fe37de-d4e8-4c3c-9c20-796c70a670dd
+              -
+                - operator
+                - '<'
+              -
+                - value
+                - '100'
+              -
+                - maxValue
+                - ''
+              -
+                - unit
+                - MB
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\assets\WidthConditionRule
+              -
+                - uid
+                - 5f334523-e081-4ccb-9e88-ae1fb78d37e7
+              -
+                - operator
+                - '<='
+              -
+                - value
+                - '500'
+              -
+                - maxValue
+                - ''
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\assets\HeightConditionRule
+              -
+                - uid
+                - 62d625b5-7a9a-4f2b-830c-02cd43d66498
+              -
+                - operator
+                - '<='
+              -
+                - value
+                - '500'
+              -
+                - maxValue
+                - ''
+  selectionLabel: null
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:5189c62e-c9e1-48eb-9828-1c029ac93568'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

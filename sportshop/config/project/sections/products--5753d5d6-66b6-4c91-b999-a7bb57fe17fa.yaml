@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: homepage
-name: Homepage
+handle: products
+name: Products
 propagationMethod: all
 siteSettings:
   190887d5-cb25-4380-ba2c-ed78da8d1eaa: # Sportshop
     enabledByDefault: true
     hasUrls: true
-    template: homepage/_entry
-    uriFormat: 'homepage/{slug}'
+    template: products/_entry
+    uriFormat: 'products/{slug}'
 type: channel

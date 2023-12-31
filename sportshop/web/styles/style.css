@@ -1,0 +1,236 @@
+:root {
+    --spacing: 24px;
+}
+
+body{
+    background-color: gray;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/* ---- nav ---- */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    height: 80px;
+    position: fixed;
+    z-index: 999;
+}
+
+nav .logo{
+    background-image: url("../assets/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 32px;
+    margin-left: 24px;
+}
+
+nav .hamburger{
+    background-image: url("../assets/hamburger.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+
+/* ---- products ---- */
+.filters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.filters .filter{
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.filters .active{
+    background-color: #000;
+    color: #fff;
+}
+
+.products-section{
+    padding: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing);
+    padding-top: 104px;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: start;
+    justify-content: center;
+}
+
+.products article{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    padding: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+    width: 320px;
+}
+
+.products article a{
+    color: #000;
+    opacity: 0.8;
+}
+
+.products article img{
+    width: 100%;
+}
+
+/* ---- products-details ---- */
+.product-details{
+    padding: 24px;
+    padding-top: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.product-details article{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product-details article div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-details article img{
+    width: 320px;
+}
+
+.btn{
+    color: #fff;
+    background-color: red;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+/* ---- footer ---- */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    background-color: rgb(73, 150, 28);
+  }
+  
+  footer .elements {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  footer h1,
+  footer .elements h2 {
+    text-align: left;
+    color: #fff;
+  }
+  
+  footer .elements .menu,
+  footer .elements .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  footer .elements .menu a, footer .elements .contact a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .elements .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  footer .elements .socials div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  footer .elements .socials div a {
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+  
+  footer .elements .socials div i {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    color: #162725;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .reference {
+    text-align: center;
+    color: #fff;
+  }
+  
+  footer .reference a {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  @media (min-width: 800px){
+    footer .elements{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .product-details article{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px){
+    .product-details article{
+        gap: 200px;
+    }
+}
